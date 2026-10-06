@@ -40,7 +40,63 @@ function draw()
   vertex(width / 1.16, height / 1)
   vertex(width / 1.33, height / 1)
   endShape(CLOSE)
-  
+
+  --each window of the leftmost building will be 25 px width, 25 px space -> 4 windows
+  --pink color
+  fill(201, 173, 167)
+  rect(75, 225, 25, 45)
+
+  fill(201, 173, 167)
+  rect(125, 225, 25, 45)
+
+  fill(201, 173, 167)
+  rect(175, 225, 25, 45)
+
+  --begin second row of windows on leftmost building
+  fill(201, 173, 167)
+  rect(75, 300, 25, 45)
+
+  fill(201, 173, 167)
+  rect(125, 300, 25, 45)
+
+  fill(201, 173, 167)
+  rect(175, 300, 25, 45)
+
+  --begin 3rd row of windows on leftmost building
+  fill(201, 173, 167)
+  rect(75, 370, 25, 45)
+
+  fill(201, 173, 167)
+  rect(125, 370, 25, 45)
+
+  --fill(201, 173, 167)
+  --rect(175, 370, 25, 45)
+
+  --large window on right building
+  --fill(201, 173, 167)
+  --rect(675, 130, 50, 140)
+
+  --make mouse follower shape - a night time star
+  --triangle south
+  fill(242, 174, 123)
+  triangle(mouseX-5, mouseY, mouseX, mouseY+45, mouseX+5, mouseY)
+
+  --triangle north
+  fill(242, 174, 123)
+  triangle(mouseX-5, mouseY, mouseX, mouseY-45, mouseX+5, mouseY)
+
+  --triangle east
+  fill(242, 174, 123)
+  triangle(mouseX, mouseY+5, mouseX, mouseY-5, mouseX+45, mouseY)
+
+  --triangle west
+  fill(242, 174, 123)
+  triangle(mouseX, mouseY+5, mouseX, mouseY-5, mouseX-45, mouseY)
+
+  --mouse follower center elipse
+  fill(242, 174, 123)
+  ellipse(mouseX, mouseY, width / 32, height / 24)
+
 
  
   fill(0)
