@@ -1,8 +1,9 @@
 require("L5")
 
 function setup()
+  size(900, 400)
+  noStroke()
   windowTitle("Homework 7")
-  size(500, 500)
-end
+  background(255)
 
-function draw()
+end
