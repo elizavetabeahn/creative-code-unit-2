@@ -22,9 +22,6 @@ function setup()
 
     frameRate(60)
     windowTitle("homework 8")
-
-    describe('Black background with white text.')
-
     background(0)
     textAlign(CENTER)
     textSize(30)
